@@ -1,25 +1,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ddd"
+    android:background="@drawable/forgetpass"
     android:gravity="center"
     android:orientation="vertical"
+
     android:padding="16dp">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tax Me"
+        android:fontFamily="@font/alegreya"
         android:gravity="center"
-
-        android:textSize="16sp"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:text="FinTax"
+        android:textColor="@color/colorA"
+        android:textSize="24dp"
+        app:fontFamily="@font/artifika" />
 
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorA"
+        >
 
 
         <EditText
@@ -30,15 +36,18 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+             />
 
 
     </android.support.design.widget.TextInputLayout>
 
 
-    <LinearLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorA"
+        >
 
 
         <EditText
@@ -54,7 +63,7 @@
             android:textColor="@color/colorPrimary" />
 
 
-    </LinearLayout>
+    </android.support.design.widget.TextInputLayout>
 
 
     <Button
@@ -63,21 +72,10 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/btn_shape"
         android:text="Sign Up"
-        android:textColor="#ddd"
-        android:textStyle="bold" />
+        android:textColor="@color/colorA"
+         />
 
 
-    <!-- Link to Login Screen -->
-
-
-    <Button
-        android:id="@+id/sign_in_button"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dip"
-        android:background="@color/colorPrimary"
-        android:text="Sign In"
-        android:textColor="#ddd" />
 </LinearLayout>
